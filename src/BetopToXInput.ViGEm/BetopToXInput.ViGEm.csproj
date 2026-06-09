@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>BetopToXInput.ViGEm</RootNamespace>
+    <AssemblyName>BetopToXInput.ViGEm</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BetopToXInput.Core\BetopToXInput.Core.csproj" />
+    <PackageReference Include="Nefarius.ViGEm.Client" Version="1.21.223" />
+  </ItemGroup>
+
+</Project>

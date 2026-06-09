@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>BetopToXInput.App</RootNamespace>
+    <AssemblyName>BetopToXInput.App</AssemblyName>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BetopToXInput.Core\BetopToXInput.Core.csproj" />
+    <ProjectReference Include="..\BetopToXInput.ViGEm\BetopToXInput.ViGEm.csproj" />
+  </ItemGroup>
+
+</Project>

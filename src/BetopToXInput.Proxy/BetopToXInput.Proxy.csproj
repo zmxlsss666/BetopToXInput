@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <RootNamespace>BetopToXInput.Proxy</RootNamespace>
+    <AssemblyName>BetopToXInput.Proxy</AssemblyName>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BetopToXInput.Core\BetopToXInput.Core.csproj" />
+  </ItemGroup>
+
+  <!--
+    To turn this into a real native xinput1_3.dll proxy, install the DllExport
+    NuGet package. Uncomment the line below:
+        <PackageReference Include="DllExport" Version="1.7.4" />
+
+    Or, run the IL-repacker command provided by the package:
+        dotnet build /p:Configuration=Release /p:Platform=x64
+    The output DLL will then export every [DllExport]-annotated method.
+
+    Without the package, the project still compiles as a class library, but
+    the [DllExport] entries are no-ops and Windows won't load it as a
+    replacement for xinput1_3.dll.
+  -->
+
+</Project>
